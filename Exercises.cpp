@@ -3,7 +3,7 @@
 #include <string> 
 #include <vector>
 
-Exercises::Exercises()
+Exercises::Exercises() // Class 
 {
     sets = 0; 
     reps = 0;
@@ -11,7 +11,7 @@ Exercises::Exercises()
     exerciseName = " "; 
 }
 
-Exercises::Exercises(std::string val_a,int val_b, int val_c, int val_d )
+Exercises::Exercises(std::string val_a,int val_b, int val_c, int val_d ) // Class overloading 
 {
     exerciseName = val_a; 
     sets = val_b;
@@ -25,22 +25,22 @@ Exercises::~Exercises()
 
 }
 
-void Exercises::exerciseNum(int amount)
+void Exercises::exerciseNum(int amount) // Function for number of exercises 
 {
     amount = numExercises;
 }
 
-void Exercises::exercise_Name(std::string name)
+void Exercises::exercise_Name(std::string name) 
 {
     name = exerciseName; 
 }
 
-void Exercises::setsNum(int amount)
+void Exercises::setsNum(int amount) // Function for number of sets 
 {
     amount = sets;
 }
 
-void Exercises::repsNum(int amount)
+void Exercises::repsNum(int amount) // Function for number of reps 
 {
     amount = reps; 
 }

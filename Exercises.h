@@ -11,7 +11,7 @@
 class Exercises
 {
 public:
-    Exercises();
+    Exercises(); 
     ~Exercises();
     Exercises(std::string val_a,int val_b, int val_c, int val_d );
 
