@@ -1,47 +1,45 @@
+#include "WeeklyWorkout.h"
 #include "Exercises.h"
-#include <iostream> 
-#include <string> 
-#include <vector> 
+#include <iostream>
+#include <string>
+#include <vector>
 
-int main()
-{
-    int numExercise; // Variable for number of exercises the user chooses
-    Exercises a; // First class overload 
-    std::cout << "Enter the amount of exercises in your routine: "; // Asking user how many exercises they want 
-    std::cin >> numExercise; // Storing value 
-    std::cin.ignore(); // Avoids new line issues 
+int main() {
+    WeeklyWorkout weeklyWorkout;
+    const std::vector<std::string> daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-    Exercises * exerciseList  = new Exercises[numExercise]; // Creating an array for exercises with dynamic memory allocation
+    for (int dayIndex = 0; dayIndex < 7; ++dayIndex) {
+        std::cout << "\nEnter the routine for " << daysOfWeek[dayIndex] << ":\n";
 
-    for (int i = 0; i < numExercise; ++i) // For loop for input on each each exercise wanted by user 
-    {
-        std::string nameExercise; // String varaible for exercise name defined 
-        int numSets, numReps; // Variables for reps and sets defined 
+        int numExercises;
+        std::cout << "How many exercises for " << daysOfWeek[dayIndex] << "? ";
+        std::cin >> numExercises;
+        std::cin.ignore(); // Avoid newline issues
 
-        std::cout << "Enter the name of the exercise: "; // Asking user to input name of exercise 
-        std::getline(std::cin, nameExercise); // Storing user input into variable. std::getline allows for a space between words
+        for (int i = 0; i < numExercises; ++i) {
+            std::string exerciseName;
+            int sets, reps;
 
-        std::cout << "Enter number of sets: "; // Asking user to input number of sets 
-        std::cin >> numSets; // Storing variable 
+            // Get exercise details
+            std::cout << "Enter the name of exercise #" << (i + 1) << ": ";
+            std::getline(std::cin, exerciseName);
 
-        std::cout << "Enter number of reps: "; // Asking user to input number of reps 
-        std::cin >> numReps; // Storing variable 
-        std::cin.ignore(); // Avoid new line issues 
+            std::cout << "Enter the number of sets for " << exerciseName << ": ";
+            std::cin >> sets;
 
-        exerciseList[i]= Exercises(nameExercise, numSets, numReps, numExercise); // Assigning Exercises object to the i-th element in the array
+            std::cout << "Enter the number of reps for " << exerciseName << ": ";
+            std::cin >> reps;
+            std::cin.ignore(); // Avoid newline issues
+
+            // Create an Exercises object and add it to the current day's routine
+            Exercises exercise(exerciseName, sets, reps, numExercises);
+            weeklyWorkout.addExerciseToDay(dayIndex, exercise);
+        }
     }
 
-   std::cout << "Your exercise routine:\n"; // Displaying exercise routine to user 
-   for (int i = 0; i < numExercise; ++i)
-   {
-    std::cout << "\n"; 
-    std::cout << "Exercise name: " << exerciseList[i].getExcercises() << "\n";
-    std::cout << "Sets: " << exerciseList[i].getSets() << "\n";
-    std::cout << "Reps: " << exerciseList[i].getReps() << "\n\n";
-   }
+    // Display the weekly workout plan
+    std::cout << "\nYour weekly workout plan:\n";
+    weeklyWorkout.displayWeeklyWorkout();
 
-    return 0; 
-
-    
-    
+    return 0;
 }

@@ -15,13 +15,13 @@ public:
     ~Exercises();
     Exercises(std::string val_a,int val_b, int val_c, int val_d );
 
-    int getSets() {return sets;}
+    int getSets() const {return sets;}
     void setSets(int value) {sets = value;} 
 
-    int getReps() {return reps;}
+    int getReps() const {return reps;}
     void setReps(int value) {reps = value;} 
     
-    std::string getExcercises() {return exerciseName;}
+    std::string getExcercises() const {return exerciseName;}
     void setExercises(std::string value) {exerciseName = value;}
 
     void exerciseNum(int amount); 
