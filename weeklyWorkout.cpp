@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 
-// Constructor: Initialize the week with 7 empty vectors (one for each day)
+//Initialize the week with 7 empty vectors (one for each day)
 WeeklyWorkout::WeeklyWorkout() : week(7) {}
 
 void WeeklyWorkout::addExerciseToDay(int dayIndex, const Exercises& exercise) {
@@ -35,7 +35,7 @@ void WeeklyWorkout::saveWeeklyWorkoutToFile(const std::string& filename) const {
         return;
     }
 
-    for (size_t i = 0; i < week.size(); ++i) {
+    for (size_t i = 0; i < week.size(); ++i) { // goes through the entire vector. Size of the vector shows the amount of exercises
         outFile << daysOfWeek[i] << ":\n";
         if (week[i].empty()) {
             outFile << "  No exercises scheduled.\n";

@@ -10,7 +10,6 @@ public:
     WeeklyWorkout();
     void addExerciseToDay(int dayIndex, const Exercises& exercise);
     void displayWeeklyWorkout() const;
-
     void saveWeeklyWorkoutToFile(const std::string& filename) const;
 
 
