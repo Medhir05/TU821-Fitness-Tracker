@@ -1,0 +1,12 @@
+<map id="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/Exercises.h" name="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/Exercises.h">
+<area shape="rect" id="Node000001" title="Declaration of the Exercises class." alt="" coords="145,5,350,96"/>
+<area shape="rect" id="Node000002" href="$_exercises_8cpp.html" title="Implementation of the Exercises class." alt="" coords="5,144,210,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="193,109,155,145,152,141,189,105"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title="Entry point for the fitness tracker application." alt="" coords="145,283,350,373"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="250,111,250,282,245,282,245,111"/>
+<area shape="rect" id="Node000004" href="$weekly_workout_8h.html" title="Declaration of the WeeklyWorkout class." alt="" coords="285,144,490,235"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="306,105,343,141,340,145,302,109"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="333,248,295,284,292,280,329,244"/>
+<area shape="rect" id="Node000005" href="$weekly_workout_8cpp.html" title="Implementation of the WeeklyWorkout class." alt="" coords="373,283,578,373"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="427,246,449,281,444,283,422,249"/>
+</map>

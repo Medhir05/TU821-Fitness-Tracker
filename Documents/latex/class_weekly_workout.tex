@@ -1,0 +1,102 @@
+\doxysection{Weekly\+Workout Class Reference}
+\hypertarget{class_weekly_workout}{}\label{class_weekly_workout}\index{WeeklyWorkout@{WeeklyWorkout}}
+
+
+Manages a weekly workout plan. The class provides functionalities to add, display, and save a workout plan.  
+
+
+
+
+{\ttfamily \#include $<$weekly\+Workout.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_weekly_workout_a3e2f5975cae648c2a0031fb634beb44d}{Weekly\+Workout}} ()
+\begin{DoxyCompactList}\small\item\em Constructor that initializes a weekly plan with 7 days. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weekly_workout_a26656361ebf25a85c1140f8cf1432c5f}{add\+Exercise\+To\+Day}} (int day\+Index, const \mbox{\hyperlink{class_exercises}{Exercises}} \&exercise)
+\begin{DoxyCompactList}\small\item\em Adds an exercise to a specific day of the week. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weekly_workout_aec3a6e1f101a3f533963d8bce3fa0c4b}{display\+Weekly\+Workout}} () const
+\begin{DoxyCompactList}\small\item\em Displays the entire weekly workout plan. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_weekly_workout_aa5ef66294d2621986b8d56ab19747100}{save\+Weekly\+Workout\+To\+File}} (const std\+::string \&filename) const
+\begin{DoxyCompactList}\small\item\em Displays the workout chosen in the console. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a weekly workout plan. The class provides functionalities to add, display, and save a workout plan. 
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_weekly_workout_a3e2f5975cae648c2a0031fb634beb44d}\index{WeeklyWorkout@{WeeklyWorkout}!WeeklyWorkout@{WeeklyWorkout}}
+\index{WeeklyWorkout@{WeeklyWorkout}!WeeklyWorkout@{WeeklyWorkout}}
+\doxysubsubsection{\texorpdfstring{WeeklyWorkout()}{WeeklyWorkout()}}
+{\footnotesize\ttfamily \label{class_weekly_workout_a3e2f5975cae648c2a0031fb634beb44d} 
+Weekly\+Workout\+::\+Weekly\+Workout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes a weekly plan with 7 days. 
+
+Constructor that initializes a weekly plan with 7 empty days. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_weekly_workout_a26656361ebf25a85c1140f8cf1432c5f}\index{WeeklyWorkout@{WeeklyWorkout}!addExerciseToDay@{addExerciseToDay}}
+\index{addExerciseToDay@{addExerciseToDay}!WeeklyWorkout@{WeeklyWorkout}}
+\doxysubsubsection{\texorpdfstring{addExerciseToDay()}{addExerciseToDay()}}
+{\footnotesize\ttfamily \label{class_weekly_workout_a26656361ebf25a85c1140f8cf1432c5f} 
+void Weekly\+Workout\+::add\+Exercise\+To\+Day (\begin{DoxyParamCaption}\item[{int}]{day\+Index}{, }\item[{const \mbox{\hyperlink{class_exercises}{Exercises}} \&}]{exercise}{}\end{DoxyParamCaption})}
+
+
+
+Adds an exercise to a specific day of the week. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em day\+Index} & Index of the day (0 = Monday, ..., 6 = Sunday). \\
+\hline
+{\em exercise} & The exercise to add. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_weekly_workout_aec3a6e1f101a3f533963d8bce3fa0c4b}\index{WeeklyWorkout@{WeeklyWorkout}!displayWeeklyWorkout@{displayWeeklyWorkout}}
+\index{displayWeeklyWorkout@{displayWeeklyWorkout}!WeeklyWorkout@{WeeklyWorkout}}
+\doxysubsubsection{\texorpdfstring{displayWeeklyWorkout()}{displayWeeklyWorkout()}}
+{\footnotesize\ttfamily \label{class_weekly_workout_aec3a6e1f101a3f533963d8bce3fa0c4b} 
+void Weekly\+Workout\+::display\+Weekly\+Workout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Displays the entire weekly workout plan. 
+
+Displays the weekly workout plan.
+
+Outputs the workout plan for all seven days to the console. If a day has no exercises scheduled, it indicates that the day is empty.
+
+\begin{DoxyNote}{Note}
+This function is intended for quick reference and does not save the plan to a file. 
+\end{DoxyNote}
+\Hypertarget{class_weekly_workout_aa5ef66294d2621986b8d56ab19747100}\index{WeeklyWorkout@{WeeklyWorkout}!saveWeeklyWorkoutToFile@{saveWeeklyWorkoutToFile}}
+\index{saveWeeklyWorkoutToFile@{saveWeeklyWorkoutToFile}!WeeklyWorkout@{WeeklyWorkout}}
+\doxysubsubsection{\texorpdfstring{saveWeeklyWorkoutToFile()}{saveWeeklyWorkoutToFile()}}
+{\footnotesize\ttfamily \label{class_weekly_workout_aa5ef66294d2621986b8d56ab19747100} 
+void Weekly\+Workout\+::save\+Weekly\+Workout\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{}\end{DoxyParamCaption}) const}
+
+
+
+Displays the workout chosen in the console. 
+
+Saves the weekly workout plan to a file.
+
+Writes the entire workout plan, including the exercises for each day. If a day has no exercises scheduled, it indicates that the day is empty in the file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the file to save the plan. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/\mbox{\hyperlink{weekly_workout_8h}{weekly\+Workout.\+h}}\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/\mbox{\hyperlink{weekly_workout_8cpp}{weekly\+Workout.\+cpp}}\end{DoxyCompactItemize}

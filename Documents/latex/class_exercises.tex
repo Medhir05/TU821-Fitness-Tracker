@@ -1,0 +1,205 @@
+\doxysection{Exercises Class Reference}
+\hypertarget{class_exercises}{}\label{class_exercises}\index{Exercises@{Exercises}}
+
+
+Represents an individual exercise with its properties.  
+
+
+
+
+{\ttfamily \#include $<$Exercises.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exercises_a67eec7a7f5bc25e5ed89468681f3c37b}{Exercises}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_exercises_a2073e6cf8afe620e0724ccde51dbf6f5}{\texorpdfstring{$\sim$}{\string~}\+Exercises}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_exercises_a17471caf0cd8af19f0c12df7b2e6fcb8}{Exercises}} (std\+::string val\+\_\+a, int val\+\_\+b, int val\+\_\+c, int val\+\_\+d)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor. \end{DoxyCompactList}\item 
+\Hypertarget{class_exercises_ac355f4b7f6d31130ce070ad09f78a248}\label{class_exercises_ac355f4b7f6d31130ce070ad09f78a248} 
+int {\bfseries get\+Sets} () const
+\item 
+\Hypertarget{class_exercises_a7bc697b1c62129bf75d181243735d4c4}\label{class_exercises_a7bc697b1c62129bf75d181243735d4c4} 
+void {\bfseries set\+Sets} (int value)
+\item 
+\Hypertarget{class_exercises_aaeed4d9f5c7238818e7268eb7c31dd8a}\label{class_exercises_aaeed4d9f5c7238818e7268eb7c31dd8a} 
+int {\bfseries get\+Reps} () const
+\item 
+\Hypertarget{class_exercises_a3d8398a6e793b00547a7900463d43b23}\label{class_exercises_a3d8398a6e793b00547a7900463d43b23} 
+void {\bfseries set\+Reps} (int value)
+\item 
+\Hypertarget{class_exercises_a3fbb052758a7018166a41d2c47c5a2ca}\label{class_exercises_a3fbb052758a7018166a41d2c47c5a2ca} 
+std\+::string {\bfseries get\+Excercises} () const
+\item 
+\Hypertarget{class_exercises_aa86b69ceeec1bf5cd2a32ad2be2b6b81}\label{class_exercises_aa86b69ceeec1bf5cd2a32ad2be2b6b81} 
+void {\bfseries set\+Exercises} (std\+::string value)
+\item 
+void \mbox{\hyperlink{class_exercises_ad5c07174059c6b61404d606fd5079a11}{exercise\+Num}} (int amount)
+\begin{DoxyCompactList}\small\item\em total number of exercises \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exercises_af3a1e6a63baff4ffabd30319b594e964}{exercise\+\_\+\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em name of exercise \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exercises_a1c2badb26e0046a18434a8628477f23d}{sets\+Num}} (int amount)
+\begin{DoxyCompactList}\small\item\em number of sets \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_exercises_a99e59ece6e0b98183497964965a2a7a0}{reps\+Num}} (int amount)
+\begin{DoxyCompactList}\small\item\em number of reps \end{DoxyCompactList}\item 
+\Hypertarget{class_exercises_a20ba7195670549a116bdc1f1fe993c9b}\label{class_exercises_a20ba7195670549a116bdc1f1fe993c9b} 
+void {\bfseries display\+Workout} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents an individual exercise with its properties. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_exercises_a67eec7a7f5bc25e5ed89468681f3c37b}\index{Exercises@{Exercises}!Exercises@{Exercises}}
+\index{Exercises@{Exercises}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{Exercises()}{Exercises()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_exercises_a67eec7a7f5bc25e5ed89468681f3c37b} 
+Exercises\+::\+Exercises (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+Default constructor for the \doxylink{class_exercises}{Exercises} class.
+
+Initializes an exercise object with default values\+:
+\begin{DoxyItemize}
+\item {\ttfamily sets} and {\ttfamily reps} are set to 0.
+\item {\ttfamily num\+Exercises} is set to 0.
+\item {\ttfamily exercise\+Name} is initialized as an empty string. 
+\end{DoxyItemize}\Hypertarget{class_exercises_a2073e6cf8afe620e0724ccde51dbf6f5}\index{Exercises@{Exercises}!````~Exercises@{\texorpdfstring{$\sim$}{\string~}Exercises}}
+\index{````~Exercises@{\texorpdfstring{$\sim$}{\string~}Exercises}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Exercises()}{\string~Exercises()}}
+{\footnotesize\ttfamily \label{class_exercises_a2073e6cf8afe620e0724ccde51dbf6f5} 
+Exercises\+::\texorpdfstring{$\sim$}{\string~}\+Exercises (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor for the \doxylink{class_exercises}{Exercises} class.
+
+Currently performs no specific cleanup as no dynamic memory is used. \Hypertarget{class_exercises_a17471caf0cd8af19f0c12df7b2e6fcb8}\index{Exercises@{Exercises}!Exercises@{Exercises}}
+\index{Exercises@{Exercises}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{Exercises()}{Exercises()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_exercises_a17471caf0cd8af19f0c12df7b2e6fcb8} 
+Exercises\+::\+Exercises (\begin{DoxyParamCaption}\item[{std\+::string}]{val\+\_\+a}{, }\item[{int}]{val\+\_\+b}{, }\item[{int}]{val\+\_\+c}{, }\item[{int}]{val\+\_\+d}{}\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor. 
+
+Parameterized constructor for the \doxylink{class_exercises}{Exercises} class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+a} & Name of the exercise. \\
+\hline
+{\em val\+\_\+b} & Number of sets. \\
+\hline
+{\em val\+\_\+c} & Number of reps. \\
+\hline
+{\em val\+\_\+d} & Total number of exercises.\\
+\hline
+\end{DoxyParams}
+Allows creating an exercise object with specific values.
+
+
+\begin{DoxyParams}{Parameters}
+{\em val\+\_\+a} & The name of the exercise. \\
+\hline
+{\em val\+\_\+b} & The number of sets for the exercise. \\
+\hline
+{\em val\+\_\+c} & The number of reps per set. \\
+\hline
+{\em val\+\_\+d} & The total number of exercises in the routine. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_exercises_af3a1e6a63baff4ffabd30319b594e964}\index{Exercises@{Exercises}!exercise\_Name@{exercise\_Name}}
+\index{exercise\_Name@{exercise\_Name}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{exercise\_Name()}{exercise\_Name()}}
+{\footnotesize\ttfamily \label{class_exercises_af3a1e6a63baff4ffabd30319b594e964} 
+void Exercises\+::exercise\+\_\+\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name}{}\end{DoxyParamCaption})}
+
+
+
+name of exercise 
+
+Sets the name of the exercise.
+
+Updates the {\ttfamily name} parameter with the name of the exercise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Reference to a string to store the exercise name. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_exercises_ad5c07174059c6b61404d606fd5079a11}\index{Exercises@{Exercises}!exerciseNum@{exerciseNum}}
+\index{exerciseNum@{exerciseNum}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{exerciseNum()}{exerciseNum()}}
+{\footnotesize\ttfamily \label{class_exercises_ad5c07174059c6b61404d606fd5079a11} 
+void Exercises\+::exercise\+Num (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+total number of exercises 
+
+Sets the number of exercises.
+
+Updates the {\ttfamily amount} parameter with the total number of exercises in the routine.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Reference to an integer to store the total number of exercises. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_exercises_a99e59ece6e0b98183497964965a2a7a0}\index{Exercises@{Exercises}!repsNum@{repsNum}}
+\index{repsNum@{repsNum}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{repsNum()}{repsNum()}}
+{\footnotesize\ttfamily \label{class_exercises_a99e59ece6e0b98183497964965a2a7a0} 
+void Exercises\+::reps\+Num (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+number of reps 
+
+Sets the number of reps.
+
+Updates the {\ttfamily amount} parameter with the number of reps per set for the exercise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Reference to an integer to store the number of reps per set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_exercises_a1c2badb26e0046a18434a8628477f23d}\index{Exercises@{Exercises}!setsNum@{setsNum}}
+\index{setsNum@{setsNum}!Exercises@{Exercises}}
+\doxysubsubsection{\texorpdfstring{setsNum()}{setsNum()}}
+{\footnotesize\ttfamily \label{class_exercises_a1c2badb26e0046a18434a8628477f23d} 
+void Exercises\+::sets\+Num (\begin{DoxyParamCaption}\item[{int}]{amount}{}\end{DoxyParamCaption})}
+
+
+
+number of sets 
+
+Sets the number of sets.
+
+Updates the {\ttfamily amount} parameter with the number of sets for the exercise.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Reference to an integer to store the number of sets. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/\mbox{\hyperlink{_exercises_8h}{Exercises.\+h}}\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/\mbox{\hyperlink{_exercises_8cpp}{Exercises.\+cpp}}\end{DoxyCompactItemize}

@@ -1,15 +1,31 @@
+/**
+ * @file WeeklyWorkout.cpp
+ * @brief Implementation of the WeeklyWorkout class.
+ */
+
 #include "WeeklyWorkout.h"
 #include <iostream>
 #include <fstream>
 
-//Initialize the week with 7 empty vectors (one for each day)
+/**
+ * @brief Constructor that initializes a weekly plan with 7 empty days.
+ */
 WeeklyWorkout::WeeklyWorkout() : week(7) {}
 
+/**
+ * @brief Adds an exercise to a specific day of the week.
+ * @param dayIndex Index of the day (0 = Monday, ..., 6 = Sunday).
+ * @param exercise The exercise to add.
+ */
 void WeeklyWorkout::addExerciseToDay(int dayIndex, const Exercises& exercise) {
     if (dayIndex >= 0 && dayIndex < 7) {
         week[dayIndex].push_back(exercise); // Add the exercise to the vector. 
     }
 }
+
+/**
+ * @brief Displays the weekly workout plan.
+ */
 
 void WeeklyWorkout::displayWeeklyWorkout() const {
     for (size_t i = 0; i < week.size(); ++i) {
@@ -27,6 +43,11 @@ void WeeklyWorkout::displayWeeklyWorkout() const {
     }
 }
 
+
+/**
+ * @brief Saves the weekly workout plan to a file.
+ * @param filename Name of the file to save the plan.
+ */
 void WeeklyWorkout::saveWeeklyWorkoutToFile(const std::string& filename) const {
     std::ofstream outFile(filename); // Open file for writing
 
