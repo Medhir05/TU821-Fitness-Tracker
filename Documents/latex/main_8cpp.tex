@@ -7,11 +7,14 @@ Entry point for the fitness tracker application.
 
 {\ttfamily \#include "{}Weekly\+Workout.\+h"{}}\newline
 {\ttfamily \#include "{}Exercises.\+h"{}}\newline
-Include dependency graph for main.\+cpp\+:\nopagebreak
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=253pt]{main_8cpp__incl}
+\includegraphics[width=285pt]{main_8cpp__incl}
 \end{center}
 \end{figure}
 \doxysubsubsection*{Functions}
@@ -24,7 +27,7 @@ int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
 \doxysubsection{Detailed Description}
 Entry point for the fitness tracker application. 
 
-This program allows users to record their workout plan by specifying exercises, sets, and reps for each day of the week. 
+This program allows users to record their workout plan for multiple weeks, specifying exercises, sets, and reps for each day of the week. 
 
 \doxysubsection{Function Documentation}
 \Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
@@ -37,11 +40,8 @@ int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
 
 Main function for the fitness tracker application. 
 
-Prompts the user to input their workout routine for each day of the week, stores the data, displays the weekly workout plan, and saves it to a file.
+Allows the user to input workout data for multiple weeks.
 
 \begin{DoxyReturn}{Returns}
 int Returns 0 upon successful execution. 
 \end{DoxyReturn}
-\texorpdfstring{$<$}{<} object for managing weekly workouts
-
-\texorpdfstring{$<$}{<} number of exercises for the day

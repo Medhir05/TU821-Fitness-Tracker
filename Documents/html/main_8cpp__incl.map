@@ -1,16 +1,18 @@
 <map id="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/main.cpp" name="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/main.cpp">
-<area shape="rect" id="Node000001" title="Entry point for the fitness tracker application." alt="" coords="24,5,228,96"/>
-<area shape="rect" id="Node000002" href="$weekly_workout_8h.html" title="Declaration of the WeeklyWorkout class." alt="" coords="15,144,138,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,97,92,131,87,129,103,95"/>
-<area shape="rect" id="Node000005" href="$_exercises_8h.html" title="Declaration of the Exercises class." alt="" coords="122,219,212,245"/>
-<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="141,96,153,143,165,203,160,204,147,145,136,97"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="87,293,141,320"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="82,171,110,278,105,279,77,172"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="5,293,63,320"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="76,172,44,279,39,277,70,170"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="94,169,142,207,138,211,91,173"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="160,247,134,282,130,279,156,244"/>
-<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="145,248,72,288,69,283,143,244"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="165,293,236,320"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="176,245,191,278,186,280,171,247"/>
+<area shape="rect" id="Node000001" title="Entry point for the fitness tracker application." alt="" coords="36,5,241,96"/>
+<area shape="rect" id="Node000002" href="$weekly_workout_8h.html" title="Declaration of the WeeklyWorkout class." alt="" coords="28,144,151,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,97,104,131,99,129,115,95"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="11,293,69,320"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="58,99,36,120,18,145,9,179,11,215,19,249,30,278,25,280,14,251,5,216,4,179,14,143,32,116,55,95"/>
+<area shape="rect" id="Node000005" href="$_exercises_8h.html" title="Declaration of the Exercises class." alt="" coords="128,219,218,245"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="154,96,165,144,173,203,168,204,160,144,149,97"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="207,293,278,320"/>
+<area shape="poly" id="edge10_Node000001_Node000006" title=" " alt="" coords="171,95,205,152,233,218,241,249,244,278,239,278,235,250,228,220,200,155,167,98"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="117,293,171,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,170,118,244,133,278,128,280,113,246,90,172"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="88,172,51,280,46,278,83,170"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="106,169,149,206,146,210,102,173"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="171,247,157,280,152,278,166,245"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="151,248,78,288,75,283,149,244"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="187,244,222,280,218,284,183,248"/>
 </map>

@@ -19,7 +19,9 @@
 
 /**
  * @class Exercises
- * @brief Represents an individual exercise with its properties.
+ * @brief Represents an individual exercise with its properties.   
+ * The class is used to define and manage individual exercises.
+ * @dotfile diagrams/class_exercises.dot
  */
 class Exercises
 {

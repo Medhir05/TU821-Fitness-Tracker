@@ -1,63 +1,82 @@
 /**
  * @file main.cpp
  * @brief Entry point for the fitness tracker application.
- * 
- * This program allows users to record their workout plan by
+ *
+ * This program allows users to record their workout plan for multiple weeks,
  * specifying exercises, sets, and reps for each day of the week.
  */
+
 #include "WeeklyWorkout.h"
 #include "Exercises.h"
+#include <vector>
+#include <iostream>
+
 /**
  * @brief Main function for the fitness tracker application.
- * 
- * Prompts the user to input their workout routine for each day of the week,
- * stores the data, displays the weekly workout plan, and saves it to a file.
- * 
+ *
+ * Allows the user to input workout data for multiple weeks.
+ *
  * @return int Returns 0 upon successful execution.
  */
-
-
-
 int main() {
-    WeeklyWorkout weeklyWorkout; ///< object for managing weekly workouts 
-    const std::vector<std::string> daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };// vector with days of week
+    int numWeeks;  // Number of weeks the user wants to track
+    std::cout << "How many weeks of workout data would you like to enter? ";
+    std::cin >> numWeeks;
+    std::cin.ignore();  // Consume the newline character left in the buffer
 
-    // Loop through each day 
-    for (int dayIndex = 0; dayIndex < 7; ++dayIndex) {
-        std::cout << "\nEnter the routine for " << daysOfWeek[dayIndex] << ":\n";
+    // Vector to store WeeklyWorkout objects for multiple weeks
+    std::vector<WeeklyWorkout> allWeeks;
 
-        int numExercises; ///< number of exercises for the day
-        std::cout << "How many exercises for " << daysOfWeek[dayIndex] << "? "; // how many exercises for each day
-        std::cin >> numExercises;  // store value 
-        std::cin.ignore(); // Avoid newline issues
+    // Loop for each week
+    for (int weekIndex = 0; weekIndex < numWeeks; ++weekIndex) {
+        WeeklyWorkout weeklyWorkout;  // Create a new WeeklyWorkout object
+        const std::vector<std::string> daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
-        for (int i = 0; i < numExercises; ++i) {
-            std::string exerciseName;
-            int sets, reps;
+        std::cout << "\nEntering data for Week " << (weekIndex + 1) << ":\n";
 
-            // Get exercise details
-            std::cout << "Enter the name of exercise #" << (i + 1) << ": ";
-            std::getline(std::cin, exerciseName);
+        // Loop for each day of the week
+        for (int dayIndex = 0; dayIndex < 7; ++dayIndex) {
+            std::cout << "\nEnter the routine for " << daysOfWeek[dayIndex] << ":\n";
 
-            std::cout << "Enter the number of sets for " << exerciseName << ": ";
-            std::cin >> sets;
+            int numExercises;
+            std::cout << "How many exercises for " << daysOfWeek[dayIndex] << "? ";
+            std::cin >> numExercises;
+            std::cin.ignore();  // Consume the newline character left in the buffer
 
-            std::cout << "Enter the number of reps for " << exerciseName << ": ";
-            std::cin >> reps;
-            std::cin.ignore(); // Avoid newline issues
+            // Loop for each exercise
+            for (int i = 0; i < numExercises; ++i) {
+                std::string exerciseName;
+                int sets, reps;
 
-            // Create an Exercises object and add it to the current day's routine
-            Exercises exercise(exerciseName, sets, reps, numExercises);
-            weeklyWorkout.addExerciseToDay(dayIndex, exercise);
+                std::cout << "Enter the name of exercise #" << (i + 1) << ": ";
+                std::getline(std::cin, exerciseName);  // Read the exercise name
+
+                std::cout << "Enter the number of sets for " << exerciseName << ": ";
+                std::cin >> sets;
+
+                std::cout << "Enter the number of reps for " << exerciseName << ": ";
+                std::cin >> reps;
+                std::cin.ignore();  // Consume the newline character left in the buffer
+
+                Exercises exercise(exerciseName, sets, reps, numExercises);
+                weeklyWorkout.addExerciseToDay(dayIndex, exercise);
+            }
         }
+
+        allWeeks.push_back(weeklyWorkout);  // Add the week's data to the vector
     }
 
-    // Display the weekly workout plan
-    std::cout << "\nYour weekly workout plan:\n";
-    weeklyWorkout.displayWeeklyWorkout();
+    // Display all weeks
+    for (int weekIndex = 0; weekIndex < numWeeks; ++weekIndex) {
+        std::cout << "\nWeek " << (weekIndex + 1) << ":\n";
+        allWeeks[weekIndex].displayWeeklyWorkout();
+    }
 
-    std::string filename = "WeeklyWorkoutPlan.txt";
-    weeklyWorkout.saveWeeklyWorkoutToFile(filename);
+    // Save each week's data to a separate file
+    for (int weekIndex = 0; weekIndex < numWeeks; ++weekIndex) {
+        std::string filename = "WeeklyWorkoutPlan_Week_" + std::to_string(weekIndex + 1) + ".txt";
+        allWeeks[weekIndex].saveWeeklyWorkoutToFile(filename);
+    }
 
     return 0;
 }

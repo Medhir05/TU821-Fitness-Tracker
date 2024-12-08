@@ -1,0 +1,22 @@
+Monday:
+  Exercise: CUrl, Sets: 12, Reps: 2
+  Exercise: Squat press, Sets: 12, Reps: 8
+
+Tuesday:
+  No exercises scheduled.
+
+Wednesday:
+  No exercises scheduled.
+
+Thursday:
+  No exercises scheduled.
+
+Friday:
+  No exercises scheduled.
+
+Saturday:
+  No exercises scheduled.
+
+Sunday:
+  No exercises scheduled.
+
