@@ -1,0 +1,1 @@
+This program allows a user to update a fitness tracker with their workout for each day of the week. The user can select how many exercises per day, the name of the exercise, and how many sets and reps per exercise. Your overall workout will then be returned to you in the terminal and saved to a file. 
