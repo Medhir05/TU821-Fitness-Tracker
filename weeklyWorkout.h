@@ -54,7 +54,7 @@ public:
      * 
      * @param filename The name of the file where the workout plan is saved.
      * 
-     * @note The file is overwritten if it already exists.
+     * @note The file is overwritten if it already exists.  
      */
 
 private:

@@ -35,7 +35,7 @@ public:
      */
     ~Exercises();
     /**
-     * @brief Parameterized constructor.
+     * @brief Overloaded constructor.
      * @param val_a Name of the exercise.
      * @param val_b Number of sets.
      * @param val_c Number of reps.
@@ -56,7 +56,7 @@ public:
     void exercise_Name(std::string name); ///< name of exercise 
     void setsNum(int amount);  ///< number of sets
     void repsNum(int amount); ///< number of reps 
-    void displayWorkout(); 
+    //void displayWorkout(); 
 
 private:
         std::string exerciseName; 

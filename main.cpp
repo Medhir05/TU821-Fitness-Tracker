@@ -22,7 +22,7 @@ int main() {
     int numWeeks;  // Number of weeks the user wants to track
     std::cout << "How many weeks of workout data would you like to enter? ";
     std::cin >> numWeeks;
-    std::cin.ignore();  // Consume the newline character left in the buffer
+    std::cin.ignore();  // to fix new line issues in terminal
 
     // Vector to store WeeklyWorkout objects for multiple weeks
     std::vector<WeeklyWorkout> allWeeks;
@@ -41,7 +41,7 @@ int main() {
             int numExercises;
             std::cout << "How many exercises for " << daysOfWeek[dayIndex] << "? ";
             std::cin >> numExercises;
-            std::cin.ignore();  // Consume the newline character left in the buffer
+            std::cin.ignore();  // // to fix new line issues in terminal
 
             // Loop for each exercise
             for (int i = 0; i < numExercises; ++i) {
@@ -56,10 +56,10 @@ int main() {
 
                 std::cout << "Enter the number of reps for " << exerciseName << ": ";
                 std::cin >> reps;
-                std::cin.ignore();  // Consume the newline character left in the buffer
+                std::cin.ignore();  // // to fix new line issues in terminal
 
-                Exercises exercise(exerciseName, sets, reps, numExercises);
-                weeklyWorkout.addExerciseToDay(dayIndex, exercise);
+                Exercises exercise(exerciseName, sets, reps, numExercises); // adding this data to the overloaded constructor. 
+                weeklyWorkout.addExerciseToDay(dayIndex, exercise); 
             }
         }
 

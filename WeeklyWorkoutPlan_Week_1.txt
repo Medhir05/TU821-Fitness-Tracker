@@ -1,5 +1,5 @@
 Monday:
-  Exercise: Bench Press, Sets: 2, Reps: 12
+  Exercise: Chest Press, Sets: 2, Reps: 10
 
 Tuesday:
   No exercises scheduled.

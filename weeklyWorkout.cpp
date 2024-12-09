@@ -31,7 +31,7 @@ void WeeklyWorkout::displayWeeklyWorkout() const {
     for (size_t i = 0; i < week.size(); ++i) {
         std::cout << daysOfWeek[i] << ":\n";
         if (week[i].empty()) {
-            std::cout << "  No exercises scheduled.\n";
+            std::cout << "  No exercises scheduled.\n"; // user said there were 0 exercises for the day
         } else {
             for (const auto& exercise : week[i]) {
                 std::cout << "  Exercise: " << exercise.getExcercises()
@@ -52,14 +52,14 @@ void WeeklyWorkout::saveWeeklyWorkoutToFile(const std::string& filename) const {
     std::ofstream outFile(filename); // Open file for writing
 
     if (!outFile) {
-        std::cerr << "Error: Could not open file " << filename << " for writing.\n";
+        std::cerr << "Error: Could not open file " << filename << " for writing.\n"; //error
         return;
     }
 
     for (size_t i = 0; i < week.size(); ++i) { // goes through the entire vector. Size of the vector shows the amount of exercises
         outFile << daysOfWeek[i] << ":\n";
         if (week[i].empty()) {
-            outFile << "  No exercises scheduled.\n";
+            outFile << "  No exercises scheduled.\n"; // user said there were 0 exercises for the day
         } else {
             for (const auto& exercise : week[i]) {
                 outFile << "  Exercise: " << exercise.getExcercises()
