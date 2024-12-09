@@ -1,0 +1,131 @@
+\doxysection{Fitness\+Tracker Class Reference}
+\hypertarget{class_fitness_tracker}{}\label{class_fitness_tracker}\index{FitnessTracker@{FitnessTracker}}
+
+
+Manages a collection of workouts and tracks progress towards fitness goals.  
+
+
+
+
+{\ttfamily \#include $<$progress.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fitness_tracker_abbbba0b72bba8e81fe533067fb3103e5}{Fitness\+Tracker}} (int target\+Calories, int target\+Duration)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_fitness_tracker}{Fitness\+Tracker} object with a specified fitness goal. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fitness_tracker_ab402bacb18f42e4951fadeffcaf9c890}{add\+Workout}} (std\+::string date, std\+::string exercise, int duration, int calories)
+\begin{DoxyCompactList}\small\item\em Adds a workout to the tracker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fitness_tracker_a65268b0a17391894b44bc343dcaa0077}{show\+Workouts}} ()
+\begin{DoxyCompactList}\small\item\em Displays all recorded workouts in the tracker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fitness_tracker_a783d0e6a9314f8d08391c7cbb3b9a95e}{show\+Progress\+Summary}} ()
+\begin{DoxyCompactList}\small\item\em Displays a summary of progress towards fitness goals. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fitness_tracker_a332e5e1a9ab3a9521d3fd1b64360d52e}{save\+Workouts\+To\+File}} ()
+\begin{DoxyCompactList}\small\item\em Saves all recorded workouts to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fitness_tracker_a9f9df6e5d32c41f91d28d6f0272a9022}{load\+Workouts\+From\+File}} ()
+\begin{DoxyCompactList}\small\item\em Loads workouts from a file into the tracker. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages a collection of workouts and tracks progress towards fitness goals. 
+
+Manages fitness progress by tracking workouts and goals. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fitness_tracker_abbbba0b72bba8e81fe533067fb3103e5}\index{FitnessTracker@{FitnessTracker}!FitnessTracker@{FitnessTracker}}
+\index{FitnessTracker@{FitnessTracker}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{FitnessTracker()}{FitnessTracker()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_abbbba0b72bba8e81fe533067fb3103e5} 
+Fitness\+Tracker\+::\+Fitness\+Tracker (\begin{DoxyParamCaption}\item[{int}]{target\+Calories}{, }\item[{int}]{target\+Duration}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_fitness_tracker}{Fitness\+Tracker} object with a specified fitness goal. 
+
+Constructs a \doxylink{class_fitness_tracker}{Fitness\+Tracker} object with a specific fitness goal.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+Calories} & The target number of calories to burn. \\
+\hline
+{\em target\+Duration} & The target workout duration in minutes.\\
+\hline
+{\em target\+Calories} & The target number of calories to burn. \\
+\hline
+{\em target\+Duration} & The target duration of workouts in minutes. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fitness_tracker_ab402bacb18f42e4951fadeffcaf9c890}\index{FitnessTracker@{FitnessTracker}!addWorkout@{addWorkout}}
+\index{addWorkout@{addWorkout}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{addWorkout()}{addWorkout()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_ab402bacb18f42e4951fadeffcaf9c890} 
+void Fitness\+Tracker\+::add\+Workout (\begin{DoxyParamCaption}\item[{std\+::string}]{date}{, }\item[{std\+::string}]{exercise}{, }\item[{int}]{duration}{, }\item[{int}]{calories}{}\end{DoxyParamCaption})}
+
+
+
+Adds a workout to the tracker. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date of the workout (e.\+g., "{}\+Monday"{}). \\
+\hline
+{\em exercise} & The type of exercise performed. \\
+\hline
+{\em duration} & The duration of the workout in minutes. \\
+\hline
+{\em calories} & The calories burned during the workout. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_fitness_tracker_a9f9df6e5d32c41f91d28d6f0272a9022}\index{FitnessTracker@{FitnessTracker}!loadWorkoutsFromFile@{loadWorkoutsFromFile}}
+\index{loadWorkoutsFromFile@{loadWorkoutsFromFile}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{loadWorkoutsFromFile()}{loadWorkoutsFromFile()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_a9f9df6e5d32c41f91d28d6f0272a9022} 
+void Fitness\+Tracker\+::load\+Workouts\+From\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Loads workouts from a file into the tracker. 
+
+Reads workout data from "{}workout\+\_\+history.\+txt"{}. If the file does not exist, it notifies the user.
+
+Reads the workout data from "{}workout\+\_\+history.\+txt"{}. If the file does not exist, it notifies the user. \Hypertarget{class_fitness_tracker_a332e5e1a9ab3a9521d3fd1b64360d52e}\index{FitnessTracker@{FitnessTracker}!saveWorkoutsToFile@{saveWorkoutsToFile}}
+\index{saveWorkoutsToFile@{saveWorkoutsToFile}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{saveWorkoutsToFile()}{saveWorkoutsToFile()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_a332e5e1a9ab3a9521d3fd1b64360d52e} 
+void Fitness\+Tracker\+::save\+Workouts\+To\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Saves all recorded workouts to a file. 
+
+Appends workout data to a file named "{}workout\+\_\+history.\+txt"{}.
+
+Appends the workout data to "{}workout\+\_\+history.\+txt"{}. \Hypertarget{class_fitness_tracker_a783d0e6a9314f8d08391c7cbb3b9a95e}\index{FitnessTracker@{FitnessTracker}!showProgressSummary@{showProgressSummary}}
+\index{showProgressSummary@{showProgressSummary}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{showProgressSummary()}{showProgressSummary()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_a783d0e6a9314f8d08391c7cbb3b9a95e} 
+void Fitness\+Tracker\+::show\+Progress\+Summary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays a summary of progress towards fitness goals. 
+
+Shows a summary of progress towards fitness goals. \Hypertarget{class_fitness_tracker_a65268b0a17391894b44bc343dcaa0077}\index{FitnessTracker@{FitnessTracker}!showWorkouts@{showWorkouts}}
+\index{showWorkouts@{showWorkouts}!FitnessTracker@{FitnessTracker}}
+\doxysubsubsection{\texorpdfstring{showWorkouts()}{showWorkouts()}}
+{\footnotesize\ttfamily \label{class_fitness_tracker_a65268b0a17391894b44bc343dcaa0077} 
+void Fitness\+Tracker\+::show\+Workouts (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Displays all recorded workouts in the tracker. 
+
+Displays the history of all recorded workouts. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/progress.\+h\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/progress.\+cpp\end{DoxyCompactItemize}

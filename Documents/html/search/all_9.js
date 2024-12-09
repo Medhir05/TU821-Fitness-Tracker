@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_7eexercises_0',['~Exercises',['../class_exercises.html#a2073e6cf8afe620e0724ccde51dbf6f5',1,'Exercises']]]
+  ['targetcalories_0',['targetCalories',['../struct_fitness_goal.html#a534618a13be73d7a33aa61c0d18668c9',1,'FitnessGoal']]],
+  ['targetduration_1',['targetDuration',['../struct_fitness_goal.html#ad93b5dc4a691b5293f1083b42f910452',1,'FitnessGoal']]],
+  ['tracker_2',['Fitness Tracker',['../index.html',1,'']]]
 ];

@@ -1,0 +1,47 @@
+\doxysection{C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/progress.h}
+\hypertarget{progress_8h_source}{}\label{progress_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ PROGRESS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ PROGRESS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_workout}{Workout}}\ \{}
+\DoxyCodeLine{00012\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_workout_a52aabba6216f5780ab4782c6ff7be6dc}{date}};\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_workout_adf9df527c321a7960b2bb03a122ca84d}{exercise}};\ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_workout_a05f57ffaf5ffd3cfa9dc5fa2a13cefaf}{duration}};\ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_workout_adedee11553af7e8f1fe8fe2d7bef308e}{caloriesBurned}};\ \ \ \ \ \ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{struct_workout_affc0455e503c3340ed41e9d2ee35b048}{Workout}}(std::string\ \mbox{\hyperlink{struct_workout_a52aabba6216f5780ab4782c6ff7be6dc}{date}},\ std::string\ \mbox{\hyperlink{struct_workout_adf9df527c321a7960b2bb03a122ca84d}{exercise}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_workout_a05f57ffaf5ffd3cfa9dc5fa2a13cefaf}{duration}},\ \textcolor{keywordtype}{int}\ calories);}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_fitness_goal}{FitnessGoal}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_fitness_goal_a534618a13be73d7a33aa61c0d18668c9}{targetCalories}};\ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_fitness_goal_ad93b5dc4a691b5293f1083b42f910452}{targetDuration}};\ \ \ \ \ \ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{struct_fitness_goal_a7dda96532db228f3ca1fcf3140b1f577}{FitnessGoal}}(\textcolor{keywordtype}{int}\ calories,\ \textcolor{keywordtype}{int}\ duration);}
+\DoxyCodeLine{00041\ \};}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fitness_tracker}{FitnessTracker}}\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ std::vector<Workout>\ workouts;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{struct_fitness_goal}{FitnessGoal}}\ goal;\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00058\ \ \ \ \ \mbox{\hyperlink{class_fitness_tracker_abbbba0b72bba8e81fe533067fb3103e5}{FitnessTracker}}(\textcolor{keywordtype}{int}\ targetCalories,\ \textcolor{keywordtype}{int}\ targetDuration);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fitness_tracker_ab402bacb18f42e4951fadeffcaf9c890}{addWorkout}}(std::string\ date,\ std::string\ exercise,\ \textcolor{keywordtype}{int}\ duration,\ \textcolor{keywordtype}{int}\ calories);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fitness_tracker_a65268b0a17391894b44bc343dcaa0077}{showWorkouts}}();}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fitness_tracker_a783d0e6a9314f8d08391c7cbb3b9a95e}{showProgressSummary}}();}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fitness_tracker_a332e5e1a9ab3a9521d3fd1b64360d52e}{saveWorkoutsToFile}}();}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fitness_tracker_a9f9df6e5d32c41f91d28d6f0272a9022}{loadWorkoutsFromFile}}();}
+\DoxyCodeLine{00093\ \};}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PROGRESS\_H}}
+
+\end{DoxyCode}

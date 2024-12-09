@@ -8,6 +8,7 @@
 
 #include "WeeklyWorkout.h"
 #include "Exercises.h"
+#include "progress.h"
 #include <vector>
 #include <iostream>
 
@@ -77,6 +78,56 @@ int main() {
         std::string filename = "WeeklyWorkoutPlan_Week_" + std::to_string(weekIndex + 1) + ".txt";
         allWeeks[weekIndex].saveWeeklyWorkoutToFile(filename);
     }
+
+    int calories_burned; 
+    int minutes_training; 
+    std::cout << "How many calories do you plan on burning in total this week?\n"; 
+    std::cin>> calories_burned; 
+    std::cout << "How many minutes did you plan on train this week?\n"; 
+    std::cin >> minutes_training; 
+
+    FitnessTracker tracker(calories_burned, minutes_training);
+
+    std::cout << "Did you do any other activities this week? (y/n): ";
+char moreActivities;
+std::cin >> moreActivities;
+std::cin.ignore(); // Clear newline from input buffer
+
+while (moreActivities == 'y' || moreActivities == 'Y') {
+    std::string dayOfWeek, exercise;
+    int duration, calories;
+
+    std::cout << "Enter the day of the week (e.g., Monday, Tuesday): ";
+    std::getline(std::cin, dayOfWeek);
+
+    std::cout << "Enter the type of exercise: ";
+    std::getline(std::cin, exercise);
+
+    std::cout << "Enter the duration of the activity (in minutes): ";
+    std::cin >> duration;
+
+    std::cout << "Enter the calories burned: ";
+    std::cin >> calories;
+
+    // Add workout using day of the week as the date
+    tracker.addWorkout(dayOfWeek, exercise, duration, calories);
+
+    std::cout << "Do you want to add another activity? (y/n): ";
+    std::cin >> moreActivities;
+    std::cin.ignore(); // Clear newline
+}
+
+    // Show all workouts
+    tracker.showWorkouts();
+
+    // Show progress summary
+    tracker.showProgressSummary();
+
+    // Save workouts to file
+    tracker.saveWorkoutsToFile();
+
+    // Load workouts from file (if any)
+    tracker.loadWorkoutsFromFile();
 
     return 0;
 }

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['main_0',['main',['../main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.cpp']]]
+  ['fitnessgoal_0',['FitnessGoal',['../struct_fitness_goal.html#a7dda96532db228f3ca1fcf3140b1f577',1,'FitnessGoal']]],
+  ['fitnesstracker_1',['FitnessTracker',['../class_fitness_tracker.html#abbbba0b72bba8e81fe533067fb3103e5',1,'FitnessTracker']]]
 ];
