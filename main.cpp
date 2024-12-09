@@ -83,7 +83,7 @@ int main() {
     int minutes_training; 
     std::cout << "How many calories do you plan on burning in total this week?\n"; 
     std::cin>> calories_burned; 
-    std::cout << "How many minutes did you plan on train this week?\n"; 
+    std::cout << "How many minutes did you plan on training this week?\n"; 
     std::cin >> minutes_training; 
 
     FitnessTracker tracker(calories_burned, minutes_training);
