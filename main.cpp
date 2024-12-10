@@ -1,4 +1,5 @@
 /**
+ *Test record is available on github: https://github.com/Medhir05/TU821-Fitness-Tracker. User manual is available on the README file in the zip. Doxygen documentation is also available in the zip file. This submission is for: Medhir Gulati, Jack Clarke, David Costello.
  * @file main.cpp
  * @brief Entry point for the fitness tracker application.
  *
@@ -6,18 +7,27 @@
  * specifying exercises, sets, and reps for each day of the week.
  */
 
-#include "WeeklyWorkout.h"
-#include "Exercises.h"
+#include "weeklyWorkout.h"
+#include "Exercise.h"
 #include "progress.h"
 #include "Login.h"
 #include <vector>
 #include <iostream>
+
+/**
+ * @brief Main function for the fitness tracker application.
+ *
+ * Allows the user to input workout data for multiple weeks.
+ *
+ * @return int Returns 0 upon successful execution.
+ */
 int main() {
    
     
     // login system
     Login loginSystem("credentials.txt");
 
+    //variables for login system
         int choice;
         std::string yn, currentUser, username, password;
 
@@ -35,7 +45,7 @@ int main() {
                 std::cin >> password;
 
                 
-             //register
+             //Register
                 loginSystem.registerUser(username, password);
             } else if (choice == 2) {
                 std::cout << "Enter username: ";
@@ -46,20 +56,20 @@ int main() {
                 currentUser = username;
                 break; 
             
-                //guest
+                //guest feature
             } else if (choice == 3) {
                 currentUser = "guest";
                 std::cout << "As a guest your files may be overwritten at any time.\nDo you wish to continue (y/n): ";
                 std::cin >> yn;
 
                 //continue as guest
-                if (yn == "y" || yn == "Y") {  // Correct string comparison
+                if (yn == "y" || yn == "Y") {  //if answer is y or Y it will continue if anything else return 0
                     break;
                 } else {
                     return 0;
                 }
             }
-            //exit stops program
+            //Exit stops program
              else if (choice == 4) {
                 return 0;}
             
