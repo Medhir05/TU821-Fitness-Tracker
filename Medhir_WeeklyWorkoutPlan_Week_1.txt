@@ -1,5 +1,5 @@
 Monday:
-  Exercise: Deadlift, Sets: 3, Reps: 8
+  Exercise: Chest press, Sets: 3, Reps: 10
 
 Tuesday:
   No exercises scheduled.

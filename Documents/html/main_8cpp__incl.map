@@ -1,22 +1,27 @@
 <map id="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/main.cpp" name="C:/Users/medhi/OneDrive &#45; Technological University Dublin/1st Year/Documents/GitHub/TU821&#45;Fitness&#45;Tracker/main.cpp">
-<area shape="rect" id="Node000001" title="Entry point for the fitness tracker application." alt="" coords="172,5,377,96"/>
-<area shape="rect" id="Node000002" href="$weekly_workout_8h.html" title="Declaration of the WeeklyWorkout class." alt="" coords="114,144,238,171"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,98,200,134,196,131,231,94"/>
-<area shape="rect" id="Node000004" title=" " alt="" coords="203,293,260,320"/>
-<area shape="poly" id="edge12_Node000001_Node000004" title=" " alt="" coords="303,95,317,129,327,168,329,208,318,247,300,270,276,288,273,284,296,267,313,244,324,208,322,169,312,131,298,97"/>
-<area shape="rect" id="Node000005" href="$_exercises_8h.html" title="Declaration of the Exercises class." alt="" coords="213,219,304,245"/>
-<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="273,97,264,204,258,203,268,96"/>
-<area shape="rect" id="Node000006" title=" " alt="" coords="320,293,392,320"/>
-<area shape="poly" id="edge13_Node000001_Node000006" title=" " alt="" coords="316,95,332,118,344,143,354,179,359,215,360,278,355,278,354,216,348,180,339,145,327,121,312,98"/>
-<area shape="rect" id="Node000007" href="$progress_8h_source.html" title=" " alt="" coords="5,219,88,245"/>
-<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="173,98,137,120,104,146,79,175,61,206,56,203,75,172,101,142,134,116,171,94"/>
-<area shape="rect" id="Node000003" title=" " alt="" coords="98,293,152,320"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="174,172,137,280,132,278,169,170"/>
-<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="181,170,204,244,220,278,215,281,199,246,176,172"/>
-<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="192,169,235,206,231,210,188,173"/>
-<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="237,248,163,288,160,283,234,244"/>
-<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="256,247,244,280,239,278,251,245"/>
-<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="277,244,329,282,326,286,274,248"/>
-<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="62,244,102,281,99,285,58,248"/>
-<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="80,243,190,286,188,291,78,248"/>
+<area shape="rect" id="Node000001" title="Entry point for the fitness tracker application." alt="" coords="129,5,333,96"/>
+<area shape="rect" id="Node000002" href="$weekly_workout_8h.html" title="Declaration of the WeeklyWorkout class." alt="" coords="120,144,243,171"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="212,97,196,131,192,129,208,95"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="85,293,142,320"/>
+<area shape="poly" id="edge15_Node000001_Node000004" title=" " alt="" coords="132,99,96,122,62,149,32,182,11,220,8,231,10,241,23,260,45,276,72,289,69,294,43,281,19,264,5,243,3,231,6,218,28,179,58,146,93,117,129,94"/>
+<area shape="rect" id="Node000005" href="$_exercises_8h.html" title="Declaration of the Exercises class." alt="" coords="228,219,319,245"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="246,96,258,143,271,203,265,204,252,145,240,97"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="399,293,471,320"/>
+<area shape="poly" id="edge16_Node000001_Node000006" title=" " alt="" coords="335,79,385,102,436,132,482,170,501,192,517,218,521,238,512,257,496,274,476,288,473,283,493,270,508,254,516,238,513,220,497,196,478,174,433,136,383,106,332,84"/>
+<area shape="rect" id="Node000007" href="$progress_8h_source.html" title=" " alt="" coords="20,219,103,245"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="163,98,135,121,110,146,90,176,74,206,70,204,85,173,106,142,132,117,159,94"/>
+<area shape="rect" id="Node000008" href="$_login_8h_source.html" title=" " alt="" coords="325,144,388,171"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="286,94,332,132,328,136,283,98"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="191,293,244,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="187,171,214,278,208,279,182,172"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="178,172,128,280,123,278,173,170"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="199,169,248,207,244,211,196,173"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="266,248,239,283,234,279,262,244"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="247,248,156,289,154,284,245,243"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="303,243,394,284,392,289,301,248"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="90,243,178,284,176,289,88,248"/>
+<area shape="poly" id="edge11_Node000007_Node000004" title=" " alt="" coords="73,244,98,279,94,282,69,247"/>
+<area shape="poly" id="edge13_Node000008_Node000003" title=" " alt="" coords="358,172,352,208,345,228,333,247,317,263,298,276,260,295,258,290,296,272,314,259,329,244,340,226,347,206,353,171"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="393,219,503,245"/>
+<area shape="poly" id="edge14_Node000008_Node000009" title=" " alt="" coords="374,169,422,207,419,211,371,173"/>
 </map>

@@ -1,17 +1,11 @@
 Monday:
-  Exercise: Incline chest press, Sets: 3, Reps: 12
-  Exercise: Chest fly, Sets: 3, Reps: 10
-  Exercise: Shoulder press, Sets: 2, Reps: 10
+  No exercises scheduled.
 
 Tuesday:
-  Exercise: Chest supported row, Sets: 3, Reps: 12
-  Exercise: Lat pulldown, Sets: 3, Reps: 10
-  Exercise: Bicep curl, Sets: 3, Reps: 12
+  No exercises scheduled.
 
 Wednesday:
-  Exercise: Squat, Sets: 3, Reps: 10
-  Exercise: RDL, Sets: 3, Reps: 10
-  Exercise: Leg extensions, Sets: 3, Reps: 12
+  No exercises scheduled.
 
 Thursday:
   No exercises scheduled.

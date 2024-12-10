@@ -9,17 +9,66 @@
 #include "WeeklyWorkout.h"
 #include "Exercises.h"
 #include "progress.h"
+#include "Login.h"
 #include <vector>
 #include <iostream>
-
-/**
- * @brief Main function for the fitness tracker application.
- *
- * Allows the user to input workout data for multiple weeks.
- *
- * @return int Returns 0 upon successful execution.
- */
 int main() {
+   
+    
+    // login system
+    Login loginSystem("credentials.txt");
+
+        int choice;
+        std::string yn, currentUser, username, password;
+
+    
+  //asks user what they want to do
+        while (true) {
+            std::cout << "1. Register\n2. Login\n3. Guest\n4. Exit Enter your choice (1/2/3/4): ";
+            std::cin >> choice;
+
+            //login
+            if (choice == 1) {
+                std::cout << "Enter username: ";
+                std::cin >> username;
+                std::cout << "Enter password: ";
+                std::cin >> password;
+
+                
+             //register
+                loginSystem.registerUser(username, password);
+            } else if (choice == 2) {
+                std::cout << "Enter username: ";
+                std::cin >> username;
+                std::cout << "Enter password: ";
+                std::cin >> password;
+                loginSystem.loginUser(username, password);
+                currentUser = username;
+                break; 
+            
+                //guest
+            } else if (choice == 3) {
+                currentUser = "guest";
+                std::cout << "As a guest your files may be overwritten at any time.\nDo you wish to continue (y/n): ";
+                std::cin >> yn;
+
+                //continue as guest
+                if (yn == "y" || yn == "Y") {  // Correct string comparison
+                    break;
+                } else {
+                    return 0;
+                }
+            }
+            //exit stops program
+             else if (choice == 4) {
+                return 0;}
+            
+                else {
+                std::cout << "Invalid choice. Try again.\n";
+            
+            }
+        }
+    
     int numWeeks;  // Number of weeks the user wants to track
     std::cout << "How many weeks of workout data would you like to enter? ";
     std::cin >> numWeeks;
@@ -59,8 +108,8 @@ int main() {
                 std::cin >> reps;
                 std::cin.ignore();  // // to fix new line issues in terminal
 
-                Exercises exercise(exerciseName, sets, reps, numExercises); // adding this data to the overloaded constructor. 
-                weeklyWorkout.addExerciseToDay(dayIndex, exercise); 
+                Exercises exercise(exerciseName, sets, reps, numExercises); // adding this data to the overloaded constructor.
+                weeklyWorkout.addExerciseToDay(dayIndex, exercise);
             }
         }
 
@@ -75,16 +124,16 @@ int main() {
 
     // Save each week's data to a separate file
     for (int weekIndex = 0; weekIndex < numWeeks; ++weekIndex) {
-        std::string filename = "WeeklyWorkoutPlan_Week_" + std::to_string(weekIndex + 1) + ".txt";
+        std::string filename = currentUser + "_WeeklyWorkoutPlan_Week_" + std::to_string(weekIndex + 1) + ".txt";
         allWeeks[weekIndex].saveWeeklyWorkoutToFile(filename);
     }
 
-    int calories_burned; 
-    int minutes_training; 
-    std::cout << "How many calories do you plan on burning in total this week?\n"; 
-    std::cin>> calories_burned; 
-    std::cout << "How many minutes did you plan on training this week?\n"; 
-    std::cin >> minutes_training; 
+    int calories_burned;
+    int minutes_training;
+    std::cout << "How many calories do you plan on burning in total this week?\n";
+    std::cin>> calories_burned;
+    std::cout << "How many minutes did you plan on train this week?\n";
+    std::cin >> minutes_training;
 
     FitnessTracker tracker(calories_burned, minutes_training);
 
@@ -128,6 +177,9 @@ while (moreActivities == 'y' || moreActivities == 'Y') {
 
     // Load workouts from file (if any)
     tracker.loadWorkoutsFromFile();
+    
+    // User logout + program end
+    std::cout << currentUser << " has now been logged out.\nThank you for using Fitness tracker!\n";
 
     return 0;
 }

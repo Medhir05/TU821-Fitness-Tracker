@@ -1,0 +1,114 @@
+\doxysection{Login Class Reference}
+\hypertarget{class_login}{}\label{class_login}\index{Login@{Login}}
+
+
+Manages user login and registration by storing credentials securely.  
+
+
+
+
+{\ttfamily \#include $<$Login.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_login_a7fbed479aa4f269920ebd86b60709ef1}{Login}} (const std\+::string \&file)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{class_login}{Login} object and initializes it with the given credentials file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_login_a3ad78253f16ff1f681955a7d870334b4}{login\+User}} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Authenticates a user with a given username and password. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_login_ae5ec6cca59e48cd8a36c6022f0161e65}{register\+User}} (const std\+::string \&username, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Registers a new user with a given username and password. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_login_a5a8556809c9289cc75ccf61389979af2}{user\+Exists}} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Checks if a user exists in the system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages user login and registration by storing credentials securely. 
+
+Handles user authentication and registration using a file-\/based storage system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_login_a7fbed479aa4f269920ebd86b60709ef1}\index{Login@{Login}!Login@{Login}}
+\index{Login@{Login}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily \label{class_login_a7fbed479aa4f269920ebd86b60709ef1} 
+Login\+::\+Login (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{class_login}{Login} object and initializes it with the given credentials file. 
+
+Constructs a \doxylink{class_login}{Login} object and loads credentials from a file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & The path to the file storing user credentials. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_login_a3ad78253f16ff1f681955a7d870334b4}\index{Login@{Login}!loginUser@{loginUser}}
+\index{loginUser@{loginUser}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{loginUser()}{loginUser()}}
+{\footnotesize\ttfamily \label{class_login_a3ad78253f16ff1f681955a7d870334b4} 
+bool Login\+::login\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username}{, }\item[{const std\+::string \&}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Authenticates a user with a given username and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em password} & The plaintext password of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if login is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_login_ae5ec6cca59e48cd8a36c6022f0161e65}\index{Login@{Login}!registerUser@{registerUser}}
+\index{registerUser@{registerUser}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{registerUser()}{registerUser()}}
+{\footnotesize\ttfamily \label{class_login_ae5ec6cca59e48cd8a36c6022f0161e65} 
+bool Login\+::register\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username}{, }\item[{const std\+::string \&}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Registers a new user with a given username and password. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The desired username. \\
+\hline
+{\em password} & The plaintext password for the new user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if registration is successful, false if the username is already taken. 
+\end{DoxyReturn}
+\Hypertarget{class_login_a5a8556809c9289cc75ccf61389979af2}\index{Login@{Login}!userExists@{userExists}}
+\index{userExists@{userExists}!Login@{Login}}
+\doxysubsubsection{\texorpdfstring{userExists()}{userExists()}}
+{\footnotesize\ttfamily \label{class_login_a5a8556809c9289cc75ccf61389979af2} 
+bool Login\+::user\+Exists (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username}{}\end{DoxyParamCaption})}
+
+
+
+Checks if a user exists in the system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the user exists, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/Login.\+h\item 
+C\+:/\+Users/medhi/\+One\+Drive -\/ Technological University Dublin/1st Year/\+Documents/\+Git\+Hub/\+TU821-\/\+Fitness-\/\+Tracker/Login.\+cpp\end{DoxyCompactItemize}

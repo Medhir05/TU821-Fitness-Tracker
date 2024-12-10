@@ -2,21 +2,36 @@
 #include <fstream>
 #include <iostream>
 
-// constructor
+/**
+ * @class Login
+ * @brief Manages user login and registration by storing credentials securely.
+ */
+
+/**
+ * @brief Constructs a Login object and loads credentials from a file.
+ * @param file The path to the file storing user credentials.
+ */
 Login::Login(const std::string& file) : credentialsFile(file) {
     loadCredentials();
 }
 
-// stores data as hash function
+/**
+ * @brief Hashes a given password using a simple hash function.
+ * @param password The plaintext password to hash.
+ * @return A hashed version of the password as a string.
+ */
 std::string Login::hashPassword(const std::string& password) {
-    unsigned long hash = 5381; // a common initial value
+    unsigned long hash = 5381; // A common initial value
     for (char c : password) {
         hash = ((hash << 5) + hash) + c; // hash * 33 + c
     }
     return std::to_string(hash);
 }
 
-// loads all logins from file
+/**
+ * @brief Loads user credentials from the credentials file into memory.
+ * If the file does not exist, it creates a new one.
+ */
 void Login::loadCredentials() {
     std::ifstream file(credentialsFile);
     if (!file.is_open()) {
@@ -38,7 +53,9 @@ void Login::loadCredentials() {
     file.close();
 }
 
-// save credentials to file
+/**
+ * @brief Saves user credentials from memory to the credentials file.
+ */
 void Login::saveCredentials() {
     std::ofstream file(credentialsFile);
     if (!file.is_open()) {
@@ -52,7 +69,12 @@ void Login::saveCredentials() {
     file.close();
 }
 
-// authenticate a user
+/**
+ * @brief Authenticates a user with a given username and password.
+ * @param username The username of the user.
+ * @param password The plaintext password of the user.
+ * @return True if login is successful, false otherwise.
+ */
 bool Login::loginUser(const std::string& username, const std::string& password) {
     auto it = credentials.find(username);
     if (it == credentials.end()) {
@@ -61,28 +83,28 @@ bool Login::loginUser(const std::string& username, const std::string& password) 
     }
 
     std::string hashedInputPassword = hashPassword(password);
-    
-    //login in successful
+
     if (it->second == hashedInputPassword) {
         std::cout << "Login successful!\n";
         return true;
-        
-        //password wrong
     } else {
         std::cout << "Invalid password.\n";
         return false;
     }
 }
 
-// register a new user
+/**
+ * @brief Registers a new user with a given username and password.
+ * @param username The desired username.
+ * @param password The plaintext password for the new user.
+ * @return True if registration is successful, false if the username is already taken.
+ */
 bool Login::registerUser(const std::string& username, const std::string& password) {
-    // Username taken 
     if (userExists(username)) {
         std::cout << "Username already exists.\n";
         return false;
     }
 
-    //registered
     std::string hashedPassword = hashPassword(password);
     credentials[username] = hashedPassword;
     saveCredentials();
@@ -90,7 +112,11 @@ bool Login::registerUser(const std::string& username, const std::string& passwor
     return true;
 }
 
-// check if a user exists
+/**
+ * @brief Checks if a user exists in the system.
+ * @param username The username to check.
+ * @return True if the user exists, false otherwise.
+ */
 bool Login::userExists(const std::string& username) {
     return credentials.find(username) != credentials.end();
 }
